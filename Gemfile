@@ -7,6 +7,7 @@ gem 'rails', '3.2.13'
 group :development do
 	gem 'sqlite3'
 	gem 'rspec-rails'
+	gem 'guard-rspec'
 end
 
 # Gems used only for assets and not required
@@ -24,7 +25,12 @@ gem 'execjs'
 gem 'therubyracer'
 
 group :test do
+	gem 'rspec-rails'
 	gem 'capybara'
+	gem 'rb-inotify'
+	gem 'libnotify'
+	gem 'guard-spork'
+	gem 'spork'
 end  
 
 group :production do
