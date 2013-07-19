@@ -7,7 +7,7 @@ gem 'bootstrap-sass'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 group :development do
 	gem 'sqlite3'
-	gem 'rspec-rails'
+	gem 'rspec-rails', '2.14.0'
 	gem 'guard-rspec'
 end
 
@@ -26,8 +26,8 @@ gem 'execjs'
 gem 'therubyracer'
 
 group :test do
-	gem 'rspec-rails'
-	gem 'capybara'
+	gem 'rspec-rails', '2.14.0'
+	gem 'capybara', '1.1.2'
 	gem 'rb-inotify'
 	gem 'libnotify'
 	gem 'guard-spork'
