@@ -61,7 +61,7 @@ describe "User pages" do
 				fill_in "Name",		with: "Example User"
 				fill_in "Email",	with: "user@example.com"
 				fill_in "Password", with: "foobar"
-				fill_in "Confirmation", with: "foobar"
+				fill_in "Confirm Password", with: "foobar"
 			end
 			it "should create a user" do
 				expect { click_button submit }.to change(User,:count).by(1)
@@ -96,6 +96,8 @@ describe "User pages" do
       sign_in user
       visit edit_user_path(user)
     end
+
+
 
     describe "page" do
       it { should have_selector('h1',    text: "Update your profile") }
