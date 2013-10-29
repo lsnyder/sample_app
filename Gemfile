@@ -40,6 +40,8 @@ group :test do
 	gem 'spork'
 	gem 'factory_girl_rails', '1.4.0'
 	gem 'ci_reporter'
+	gem 'simplecov'
+	gem 'simplecov-rcov'
 end  
 
 group :production do
